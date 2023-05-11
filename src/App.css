@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+h1{
+  margin-left: 10px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0px 0px 200px 20px;
+}
+
+.box, .box-q{
+  background-color: rgb(197, 197, 197);
+  border: #282c34 3px solid;
+  width:150px;
+  height:150px;
+  margin: 5px;
+  text-align: center;
+}
+
+.box:last-child{
+  background-color: rgb(209, 101, 101);
+  border: #282c34 3px solid;
+}
+
+.box-q:nth-child(1){
+  background-color: rgb(154, 160, 245);
+  border: #282c34 3px solid;
+}
+
+.button{
+  border: 0px;
+  background-color: rgb(92, 196, 245);
+  width:100px;
+  height: 40px;
+  margin: 10px;
+}
+
+.button:hover{
+  background-color: rgb(47, 151, 199);
+}
+
+.button-container{
+  margin: 10px;
+  padding: 5px;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.datalist{
+  margin: 0px 100px;
+}
+.data-container {
+  display: flex;
+  flex-direction: row;
+}
+p{
+  font-weight: bold;
+  font-size: 30px;
+}
