@@ -1,25 +1,25 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 function Stack() {
     //빈 배열로 stack의 초기값 생성
-    let firstStack = []
+    let firstStack:number[] = []
 
     // useState를 통해 현재 stack의 상태와 상태 설정 함수를 만들어줌
-    const [stack, setStack] = useState(firstStack)
+    const [stack, setStack] = useState<number[]>(firstStack)
     // stack 안에 들어가는 데이터 번호와 상태 설정 함수를 만들어줌
-    const [num, setNum] = useState(0)
+    const [num, setNum] = useState<number>(0)
 
     // 데이터 추가
-    function addData() {
+    function addData():void {
         // 데이터 번호를 1 더함
         setNum(num + 1)
         // 기존 stack의 맨 뒤에 새로운 데이터를 추가하여 새로운 stack을 만들고, 이를 현재 stack으로 변경
-        let newStack = [...stack, num]
+        let newStack:number[] = [...stack, num]
         setStack(newStack)
     }
 
     // 데이터 삭제
-    function removeData() {
+    function removeData():void {
         // 현재 데이터가 0보다 크다면 데이터 번호를 1 뺌
         if (num > 0) {
             setNum(num - 1)
@@ -47,7 +47,7 @@ function Stack() {
     )
 }
 
-function Data({ innerText }) {
+function Data({ innerText }: {innerText:number}) {
     return <div className='box'>데이터 번호<p>{innerText}</p></div>
 }
 

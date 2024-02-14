@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es5",	
+    "jsx": "react",                                
+    
+    /* Modules */
+    "module": "commonjs",                                
+    "rootDir": "./src",                                  
+    "moduleResolution": "node",                       
+    "baseUrl": "./src",                                  
+    "paths": {
+      "@common/*": [ "common/*" ],
+      "@scss/*": [ "scss/*" ],
+      "@store/*": [ "store/*" ],
+      "@interfaces/*": [ "interfaces/*" ],
+      "@network/*": [ "network/*" ],
+      "@pages/*": [ "components/pages/*" ],
+      "@hooks/*": [ "components/hooks/*" ],
+      "@helper/*": [ "components/helper/*" ],
+    },                                     
+    
+    /* JavaScript Support */
+    "allowJs": true,                                  
+    
+    /* Emit */
+    "sourceMap": true,                                
+    "outDir": "./build",                                   
+    
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": true,             
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,            
+
+    /* Type Checking */
+    "strict": true,                                      
+    "noImplicitAny": true,                            
+    "strictNullChecks": false,                         
+  
+    /* Completeness */
+    "skipLibCheck": true,                                 
+  },
+  "exclude": ["node_modules"],
+  "typeRoots": ["node_modules/@types"],
+  "include": [
+    "./src/**/*"
+  ],
+  "baseUrl": "./src",                                  
+"paths": {
+  	"@common/*": [ "common/*" ],
+  	"@scss/*": [ "scss/*" ],
+  	"@store/*": [ "store/*" ],
+    "@interfaces/*": [ "interfaces/*" ],
+    "@network/*": [ "network/*" ],
+    "@pages/*": [ "components/pages/*" ],
+    "@hooks/*": [ "components/hooks/*" ],
+    "@helper/*": [ "components/helper/*" ],
+},
+}
